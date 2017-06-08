@@ -6,7 +6,7 @@ version := "0.3"
 
 scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.10.2", "2.10.3", "2.10.4", "2.11.0", "2.11.1", "2.11.8")
+crossScalaVersions := Seq("2.10.2", "2.10.3", "2.10.4", "2.11.0", "2.11.1", "2.11.8", "2.12.2")
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
@@ -21,8 +21,8 @@ libraryDependencies ++= (
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play-json" % "2.6.0-M3" % Test,
-  "org.specs2" %% "specs2" % "2.3.13" % Test
+  "com.typesafe.play" %% "play-json" % "2.6.0-RC2" % Test,
+  "org.specs2" %% "specs2-core" % "2.4.17" % Test
 )
 
 unmanagedSourceDirectories in Compile <+= (sourceDirectory in Compile, scalaBinaryVersion){
